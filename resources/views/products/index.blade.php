@@ -29,7 +29,7 @@
       </nav>
     <div class="container">
         <div class="text-right">
-            <a href="product/create" class="btn btn-dark mt-2">New Product</a>
+            <a href="products/create" class="btn btn-dark mt-2">New Product</a>
         </div>
         <h1>Products</h1>
     </div>

@@ -28,14 +28,30 @@
 
       </nav>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <form method="POST">
-                    
+        <div class="row justify-content-center">
+            <div class="col-sm-8">
+              <div class="card mt-3 p-3">
+                <form method="POST" action="/products/store" enctype="multipart/form-data">
+                    @csrf
+                    <div class="form-group">
+                      <label>Name</label>
+                      <input type="text" name="name" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                      <label>Description</label>
+                      <textarea class="form-control" rows="4" name="description"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Image</label>
+                      <input type="file" name="image" class="form-control">
+                    </div>
+
+                    <button type="submit" class="btn btn-dark mt-3">Submit</button>
                 </form>
+              </div>
             </div>
         </div>
-        <h1>New Product</h1>
     </div>
 </body>
 </html>
